@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+</head>
+<body>
+    <script>
+    
+
+        // var a = "Vamsi is a good boy";
+        // var b = a.charAt(0);
+        // document.write(b)
+
+        // Output: V
+
+        //    var a = "Vamsi is a good boy";
+        //    var b = a.charCodeAt(1);
+        //    document.write(b)
+
+        //    Output: 97
+
+            //   var a = "Vamsi";
+            //   var b = "Krishna";
+            //   var c = a.concat(b);
+            //   document.write(c)
+
+            //   Output: VamsiKrishna
+
+            //    var a = "Vamsi is a good boy";
+            //    var b = a.endsWith("boy");
+            //    document.write(b);
+
+            //    Output: true
+
+                //  var a = String.fromCharCode(65);
+                //  document.write(a);
+
+                //  Output: A
+
+                //    var a = "Vamsi is a good boy";
+                //    var b = a.includes("is");
+                //    document.write(b)
+
+                //    Output: true
+
+
+                    //    var a = "Vamsi is a good boy";
+                    //    var b = a.indexOf("y");
+                    //    document.write(b)
+
+                    //    Output: 18
+
+                        //   var a = "Vamsi is a good boy a";
+                        //   var b = a.lastIndexOf("a");
+                        //   document.write(b)
+
+
+                        //   Output: 20
+
+                        // var a = "vamsi is a good boy";
+                        // var b = 'vamsi is a good boy';
+                        // var c = a.localeCompare(b);
+                        // document.write(c)
+
+                        // Output: 0
+
+                        // var a = "The rain in SPAIN stays mainly in the plain";
+                        // var b = a.match(/ain/g);
+                        // document.write(b)
+
+                        // Output: ain,ain,ain
+
+                        // var a = "Vamsi is a good boy";
+                        // var b = a.replace("boy", "girl");
+                        // document.write(b)
+
+                        // Output: Vamsi is a good girl
+
+                        //    var a = 'Vamsi is a good boy';
+                        //    var b = a.repeat(2);
+                        //    document.write(b)
+
+                        //    Output: Vamsi is a good boyVamsi is a good boy
+
+                            //   var a = 'Vamsi is a good boy';
+                            //   var b = a.search("Vamsi");
+                            //   document.write(b)
+
+                            //   Output: 0
+
+                            //    var a = "Vamsi is a good boy";
+                            //    var b = a.substr(1,3);
+                            //    document.write(b)
+
+                            //    Output: ams
+
+                                // var a = "Vamsi is a good boy";
+                                // var b = a.substring(1,3);
+                                // document.write(b);
+
+                                // Output: am
+
+                                // var a = "Vamsi is a good boy";
+                                // var b = a.slice(1,3);
+                                // document.write(b)
+
+                                // Output: am
+
+                                //    var a = "Vamsi is a good boy";
+                                //    var b = a.split(" ");
+                                //    document.write(b)
+
+                                //    Output: Vamsi,is,a,good,boy
+
+
+                                // var a = "Vamsi is a good boy";
+                                // var b = a.startsWith("Vamsi");
+                                // document.write(b);
+
+                                // Output: true;
+
+                                //    var a = 'Vamsi is a good boy';
+                                //    var b = a.toLocaleUpperCase();
+                                //    document.write(b)
+
+                                //    Output: VAMSI IS A GOOD BOY
+
+                                    //   var a = "Vamsi is a good boy";
+                                    //   var b = a.toLocaleLowerCase();
+                                    //   document.write(b)
+
+                                    //   Output: vamsi is a good boy
+
+
+                                        //  var a = 'Vamsi is a good boy';
+                                        //  var b = a.toLowerCase();
+                                        //  document.write(b)
+
+                                        //  Output: vamsi is a good boy
+
+                                            // var a = 'Vamsi is a good boy';
+                                            // var b = a.toUpperCase();
+                                            // document.write(b);
+
+                                            // Output: VAMSI IS A GOOD BOY
+
+                                            //    var a = "Vamsi is a good boy";
+                                            //    var b = a.toString();
+                                            //    document.write(b)
+
+                                            //    Output: Vamsi is a good boy
+
+                                                //  var a = "Vamsi is a good boy";
+                                                //  var b = a.valueOf()
+                                                //  document.write(b)
+
+                                                //  Output: Vamsi is a good boy
+
+                                                    // var a = "Vamsi is a good boy";
+                                                    // var b = a.trim();
+                                                    // document.write(b)
+
+                                                    // Output: Vamsi is a good boy
+
+
+
+
+                                                    // var a = ["Vamsi"];
+                                                    // var b = ["Krishna"];
+                                                    // var c = a.concat(b)
+                                                    // document.write(c)
+
+                                                    // Output: Vamsi,Krishna
+
+
+                                                    // function fun(a,b){
+                                                    //     var bar = a+b;
+                                                    //     return bar;
+                                                    // }
+                                                    // document.write(fun(2,1))
+
+                                                    // Output: 3
+
+                                                    //    var ages = [32,33,16,40];
+                                                        
+                                                    //     function fun(age){
+                                                    //         return age >=18;
+                                                    //     }
+
+                                                    //     function crack(){
+                                                    //         document.write = ages.filter(fun)
+                                                    //     }
+                                                    
+
+                                                    // var a = ["Vamsi"];
+                                                    // var b = ["krishna"];
+                                                    // var c = a.concat(b);
+                                                    // document.write(c)
+
+                                                    // Output: Vamsi,krishna
+
+                                                    // var a = ["Vamsi", "Shiva", "Krishna", "Hari", "Madhav", "Maruthi"];
+                                                    // var b = a.copyWithin(4,0,2);
+                                                    // document.write(b)
+
+                                                    //    entries()
+                                                    //    every()
+
+                                                    // Output: Vamsi,Shiva,Krishna,Hari,Vamsi,Shiva
+
+                                                    // var a = ["Vamsi","Krishna", "Hari"];
+                                                    // var b = a.fill("Madhav");
+                                                    // document.write(b)
+
+                                                    // Output: Madhav,Madhav,Madhav
+
+                                                    //    filter()
+
+                                                        //   find()
+
+                                                            //  findIndex()
+
+                                                            // foreach()
+                                                            
+
+                                                            // var a = Array.from("ABCDEFGHIJ");
+                                                        
+                                                            // document.write(a)
+
+                                                            // Output: A,B,C,D,E,F,G,H,I,J
+
+                                                            // var a = ["Vamsi", "Krishna", "Shiva", "Madhav"];
+                                                            // var b = a.includes("Vamsi");
+                                                            // document.write(b)
+
+                                                            // Output: true
+
+                                                            //    var a = ["Vamsi", "Shiva", "Krishna", "Hari"];
+                                                            //    var b = a.indexOf("Vamsi");
+                                                            //    document.write(b)
+
+                                                            //    Output: 0
+
+
+                                                                //   var a = ["Vamsi", "Krishna", 'Madhav', "Hari"];
+                                                                //   var b = Array.isArray(a)
+                                                                //   document.write(b);
+
+                                                                //   Output: true
+
+                                                                    //  var a = ["Vamsi","Krishna","Hari","Maruthi"];
+                                                                    //  var b = a.join();
+                                                                    //  document.write(b);
+
+                                                                    //  Output: Vamsi,Krishna,Hari,Maruthi
+
+                                                                    // keys()
+
+                                                                    // var a = ["Vamsi","Krishna","Anil","Hari"];
+                                                                    // var b = a.lastIndexOf("Anil");
+                                                                    // document.write(b)
+
+                                                                    // Output: 2
+
+                                                                    //    var a = [4,9,16,25];
+                                                                    //    var b = a.map(Math.sqrt);
+                                                                    //    document.write(b)
+
+                                                                    //    Output: 2,3,4,5
+
+                                                                        //   var a = ["Vamsi","Krisha","Anil"];
+                                                                        //   var b = a.pop();
+                                                                        //   document.write(a)
+
+                                                                        //   Output: Vamsi,Krisha
+
+
+                                                                            //  var a = ["Vamsi","Krishna","Anil"];
+                                                                            //  var b = a.push("Shiva");
+                                                                            //  document.write(a)
+
+                                                                            //  Output: Vamsi,Krishna,Anil,Shiva
+
+                                                                                // reduce
+
+                                                                                //    reduceRight
+                                                                            
+                                                                                //  var a = ["Apple", "Grapes"];
+                                                                                //  var b = a.reverse();
+                                                                                //  document.write(b)
+
+                                                                                //  Output: Grapes,Apple
+
+                                                                                //   var a = ["Apple","Grapes","Orange","Pineapple"];
+                                                                                //   var b = a.splice(1,3);
+                                                                                //   document.write(b)
+
+                                                                                //   Output: Grapes,Orange,Pineapple
+
+                                                                                    //  var a = ["Apple","Grapes","Orange","Pineapple"];
+                                                                                    //  var b = a.slice(1,3);
+                                                                                    //  document.write(b)
+                                                                                      
+                                                                                    //  Output: Grapes,Orange
+
+
+                                                                                    // var a = ["Apple", "Grapes", "Orange", "Banana"];
+                                                                                    // var b = a.shift();
+                                                                                    // document.write(a)
+
+                                                                                    // Output: Grapes,Orange,Banana
+
+                                                                                    //    var a = ["Apple","Grapes","Orange","Pineapple"];
+                                                                                    //    var b = a.unshift("Carrot");
+                                                                                    //    document.write(a)
+
+                                                                                    //    Output: Carrot,Apple,Grapes,Orange,Pineapple
+
+
+                                                                                        //   some()
+
+                                                                                        // var a = ["Apple","Banana","Mango","Orange"];
+                                                                                        // var b = a.sort();
+                                                                                        // document.write(a)
+
+                                                                                        // Output: Apple,Banana,Mango,Orange
+
+                                                                                        // var a = ["Apple","Banana","Mango","Orange"];
+                                                                                        // var b = a.toString();
+                                                                                        // document.write(b)
+
+                                                                                        // Output: Apple,Banana,Mango,Orange
+
+                                                                                        // var a = ["Apple","Banana","Mango","Orange"];
+                                                                                        // var b = a.valueOf();
+                                                                                        // document.write(a)
+
+                                                                                        // Output: Apple,Banana,Mango,Orange
+
+
+                                        //    var a = [1,2,3,4,5];
+                                        //    var b = _.first(a);
+                                        //    document.write(b)    
+
+
+                                        // var a = [0, 1, false, 2, '', 3];
+                                        // var b = _.compact(a);
+                                        // document.write(b)    
+
+                                        // var a = [1,2,3,4,5,6,10,12];
+                                        // var b = [5,2,10];
+                                        // var c = _.difference(a,b)
+                                        // document.write(c)    
+
+                                        // var a = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+                                        // var b = _.chunk(a,3)
+                                        // document.write(b)     
+
+
+                                        //  var a = [0,1,false,2,"",3];
+                                        //  var b = _.compact(a);
+                                        //  document.write(b)
+
+                                        //  Output: 1,2,3
+
+                                        // var a = [1,2,3,4,5,6];
+                                        // var b = [5,2,10];
+                                        // var c = _.difference(a,b);
+                                        // document.write(c)
+
+                                        //    Output: 1,3,4,6     
+
+                                        // var a = _.findIndex([4,6,7,12], 4 );
+                                        // document.write(a)
+                                      
+                                      //Underscore js starts
+
+
+                                        // var a = [1,2,3,4,5];
+                                        // var b = _.first(a);
+                                        // document.write(b);
+
+                                        // Output: 1
+
+                                        //    var a = [1,2,3,4,5];
+                                        //    var b = _.initial(a);
+                                        //    document.write(b)
+
+                                        //    Output: 1,2,3,4
+
+                                            //   var a = [1,2,3,4,5];
+                                            //   var b = _.last(a);
+                                            //   document.write(b)
+
+                                            //   Output: 5
+
+                                                //  var a = [1,2,3,4,5];
+                                                //  var b = _.rest(a);
+                                                //  document.write(b)
+
+                                                //  Output: 2,3,4,5
+
+
+                                                // var a = ["shiva","madhava","krishna","hari"];
+                                                // var b = _.rest(a);
+                                                // document.write(b)
+
+                                                //   var a = [1,2,"",0,false];
+                                                //   var b = _.compact(a);
+                                                //   document.write(b)
+
+                                                    //  var a = [1,2,3,4,5,6,31,30];
+                                                    //  var b = [1,2,3,7,8,9,10];
+                                                    //  var c = [21,24,30];
+                                                    //  var c = _.difference(a,b,c);
+                                                    //  document.write(c)
+
+                                                    // var a = [1,2,1,3,4,3,5,7,3];
+                                                    // var b = _.uniq(a);
+                                                    // document.write(b)
+
+
+                                                    //   var a = _.range(10);
+                                                    //   document.write(a)
+
+                                                    //   Output: 0,1,2,3,4,5,6,7,8,9
+
+                                                    //   var a = _.range(1,11,2)
+
+                                                    //   document.write(a)
+
+                                                      //Output: 1,3,5,7,9
+
+
+                                                        // var a = _.range(0,-10,-1);
+                                                        // document.write(a)
+
+                                                        // Output: 0,-1,-2,-3,-4,-5,-6,-7,-8,-9
+
+                                                        // var a = _.range(0,10,1);
+                                                        // document.write(a)
+
+                                                        // Output: 0,1,2,3,4,5,6,7,8,9
+
+
+                                                        // var a = _.range(1,30,5);
+                                                        // document.write(a)
+
+                                                        // Output: 1,6,11,16,21,26
+
+                                                        //    var a = _.range(0,30,5);
+                                                        //    document.write(a)
+
+                                                        //    Output: 0,5,10,15,20,25
+
+
+                                                        // var func = function(greetings){
+                                                        //     return greeting + ': ' + this.name
+                                                        // }
+                                                        // func = _.bind(func, {name: 'moe'}, 'hi');
+                                                        // func();
+
+                                                        // var a = ["Pineapple","Apple"];
+                                                        // var b = a.sort();
+                                                        // document.write(b)
+
+
+                                                    //    
+                                                    
+                                                    // var a = ["Vamsi"]
+                                                    // var b = ["krishna"];
+                                                    // var c = a.concat(b);
+                                                    // document.write(c)
+
+                                                    // var a = ["Vamsi","Krishna","Ganga","Durga","Hari","Madhav",];
+                                                    // var b = a.copyWithin(0,2,4);
+                                                    // document.write(b)
+
+                                                    //entries
+
+                                                    //every
+
+                                                    // var a = ["Vamsi","Krishna","Hari"];
+                                                    // var b = a.fill("Durga");
+                                                    // document.write(b)
+
+                                                    //filter
+                                                    //find
+
+                                                    // var a = ["Vamsi","Shiva","Maruthi","Ram"];
+                                                    // var b = a.findIndex(0);
+                                                    // document.write(b)
+
+                                                    //foreach
+                                                    //from
+
+                                                    // var a = ["Vamsi","Shiva"];
+                                                    // var b = a.includes("Vamsi");
+                                                    // document.write(b)
+
+                                                    // var a = ["Vamsi","Krishna","Hari"];
+                                                    // var b = a.indexOf("Vamsi");
+                                                    // document.write(b)
+
+                                                    // var a = ["Vamsi","Shiva","Hari","Krishna"];
+                                                    // var b = a.fill("Cheese",1,3);
+                                                    // document.write(b)
+
+                                                    var a = Array.from("ABCDEFGHI");
+                                                    document.write(a)
+                                                    
+                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
+                                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
